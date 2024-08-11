@@ -1,0 +1,188 @@
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+}  
+
+/*Efeito parallax*/
+.parallax {
+    background-image: url("../img/img.jpg");
+    height: 120vh;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto { 
+    width: 100%;
+    font-size: 2em;
+    text-align: center;
+    background-color: #E8E8E8;
+    z-index: 6;
+    position: relative;
+    box-shadow: 0 .1em .5em #E8E8E8;
+    display: flex;
+    align-items: center;
+    padding-top: 170px;
+    padding-bottom: 170px;
+}
+
+.textoimg {
+    text-align: center;
+    background-color: #111;
+    color: #fff;
+    padding: .7em;
+    font-size: 2em;
+    letter-spacing: .3em;
+    position: fixed;
+    bottom: 200px;
+    z-index: 5;
+    border-radius: 15px 0px 15px 0px;
+}
+
+#contato, #formacao, #sobreMim, #portfolio {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#contato, #formacao, #sobreMim {
+    display: none;
+}
+
+/*Menu*/
+#menu {
+    font-size: 2em;
+    width: 100%;
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: yellow;
+    height: 6vh;
+    position: relative;
+    top: 0;
+    z-index: 7;
+}
+
+#menu ul li {
+    list-style: none;
+    display: inline;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 7;
+    color: blue;
+    text-decoration: none;
+}
+
+#menu ul li:hover {
+    color: yellow;
+    transition-duration: 0.5s;
+}
+
+.efeitoMenu {
+    transition-duration: 1s;
+}
+
+/*Contato*/
+form {
+    width: 300px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: yellow;
+    color: black;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#mensagem {
+    height: 100px;
+}
+
+/*Roda-pé*/
+footer {
+    height: 30vh;
+}
+
+.textorodape {
+    font-size: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+    background-color: #363636;
+    letter-spacing: .3em;
+    color: white;
+    text-shadow: 0 0 0.1em #DCDCDC;
+    position: fixed;
+    bottom: 0;
+    z-index: 3; 
+    width: 100%;
+}
+
+/*Menu mobile*/
+#btnMenuMobile, #btnMenuMobileFechar {
+    display: none;
+    cursor: pointer;
+    width: 50px;
+    position: relative;
+    bottom: 7px
+}
+
+@media (max-width: 800px){
+    #menu ul {
+        position: relative;
+        top: 20px;
+        display: none; 
+        right: 20;
+    }
+
+    #menu ul li {
+        display: block;
+
+    }
+
+    #btnMenuMobile {
+        display: block;
+    }
+
+    #contato, #formacao, #sobreMim, #portfolio {
+        width: 98%;
+    }
+}
+
+@media (min-width: 800px){
+    #btnMenuMobile, #btnMenuMobileFechar {
+        display: none!important;
+    }
+
+    #menu ul {
+        display: block!important;
+    }
+    
+    #menu ul li {
+        display: inline!important;
+    }
+
+    #contato, #formacao, #sobreMim, #portfolio {
+        width: 90%;
+    }
+}

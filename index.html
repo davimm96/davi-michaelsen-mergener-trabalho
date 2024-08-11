@@ -1,0 +1,98 @@
+<!DOCTYPE hmtl>
+<html lang="pt-br">
+    <head>
+        <title>Portfólio pessoal</title>
+        <meta http-equiv="Content-Type" content="text/html"; charset="utf-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <link rel="stylesheet" href="estilo/style.css">
+        
+    </head>
+    <body>
+        <header>
+            <section id="menu">
+                <!--Menu mobile-->
+                <img src="img/menu.png" id="btnMenuMobile">
+                <img src="img/fechar-menu.png" id="btnMenuMobileFechar">
+                <!--Menu-->
+                <ul>
+                    <li id="sobreMimMenu">Sobre mim</li>
+                    <li id="formacaoMenu">Formação</li>
+                    <li id="portfolioMenu">Portfólio</li>
+                    <li id="contatoMenu">Contato</li>
+                </ul>
+            </section>
+            <!--Titulo-->
+            <section class="parallax">
+                <div class="textoimg">
+                    <h1>Portfólio Pessoal</h1>
+                </div>
+            </section>
+        </header>
+        <main>
+            <!--Conteúdo-->
+            <article class="texto" id="texto">
+                <div id="contato">
+                    <h1>Entre em contato</h1><br>
+                    <form>
+                        <input type="text" id="nome" name="nome" required placeholder="Nome">
+                        <input type="email" id="email" name="email" required placeholder="E-mail">   
+                        <textarea id="mensagem" name="mensagem" required placeholder="Menssagem"></textarea>
+                        <button type="submit">Enviar</button>   
+                    </form>
+                </div>
+                <div id="portfolio">
+                    <h1>Portfólio</h1><br>
+                    <p>
+                        <a href="https://github.com/davimm96/login-cadastro">login-cadastro</a><br>
+                        Sistema de login e cadastro feito em PHP.
+                    </p>
+                    <br>
+                    <p>
+                        <a href="https://davimm96.github.io/blog-exemplo/">blog-exemplo</a><br> 
+                        Blog feito com Jquery.
+                    </p>
+                    <br>
+                    <p>
+                        <a href="https://davimm96.github.io/FlexBlog/">blog Flex</a><br> 
+                        Blog feito com flexbox.
+                    </p>
+                    <br>
+                    <p>
+                        <a href="https://davimm96.github.io/siteBootstrap/">siteBootstrap</a><br> 
+                        Exemplo de uso de Bootstrap.
+                    </p>
+                </div>
+                <div id="formacao">
+                    <h1>Formação</h1><br>
+                    <p>
+                        Cursando Análise e Desenvolvimento de Sistemas, tenho conhecimento dessas técnologias:
+                    </p>
+                    <br>
+                    <p>PHP;</p>
+                    <p>MySQL;</p> 
+                    <p>JavaScript;</p>
+                    <p>Jquery;</p>
+                    <p>Bootstrap;</p>
+                    <p>CSS;</p>
+                    <p>SCSS;</p>
+                    <p>HTML;</p>
+                    <p>Git e GitHub.</p>
+                </div>
+                <div id="sobreMim">
+                    <h1>Sobre mim</h1><br>
+                    <p>
+                        Meu nome é Davi Michaelsen Mergener, tenho 28 anos e sou um desenvolvedor web
+                         full-stack com paixão por PHP e JavaScript. Com experiência em desenvolvimento web,
+                          busco continuamente aprimorar minhas habilidades e explorar novas tecnologias.
+                           Como hobby, gosto de jogar RPG, desenhar, etc.
+                    </p>
+                </div>
+            </article>
+        </main>
+        <!--Roda-pé-->
+        <footer>
+            <div class="textorodape">Trabalho de faculdade (Uninter), Fundamentos da Programação Web.</div>
+        </footer>
+        <script src="script/script.js"></script>
+    </body>
+</html>
